@@ -6,11 +6,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "../../");
 
-const indexRouter = express.Router();
+const usersRouter = express.Router();
 
-indexRouter.get("/", (req, res) => {
-  const indexPath = path.join(rootDir, "client", "index.html");
-  res.sendFile(path.join(indexPath));
+usersRouter.get("/login", (req, res) => {
+  const loginPath = path.join(rootDir, "client", "html", "login.html");
+  res.sendFile(path.join(loginPath));
 });
 
-export default indexRouter;
+export default usersRouter;
