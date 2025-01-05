@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TC - Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form action="submitSignup" id="signupForm" method="post">
+      <label for="emailInput">Email</label>
+      <input
+        type="email"
+        name="emailInput"
+        id=""
+        placeholder="example@email.com"
+      />
+
+      <label for="pwInput">Password</label>
+      <input type="password" name="pwInput" id="" placeholder="myPassword123" />
+
+      <button type="submit">Create Account</button>
+      <p>Already got an account. Click <a href="">here</a> to login.</p>
+    </form>
+
+    <script type="module" src="../public/js/app.js"></script>
+  </body>
+</html>
